@@ -4,7 +4,6 @@
     <table class='tabla'>
         <tr> <th style='color:aqua;'>Marca</th> <th style='color:aqua;'>Modelo</th> <th style='color:aqua;'>Tipo de pala</th> <th style='color:aqua;'>Forma de la pala</th> <th style='color:aqua;'>Peso</th> <th style='color:aqua;'>Precio</th> <th style='color:aqua;'>Detalles</th></tr>
         <?php
-            print_r($_SESSION['carrito']);
             foreach ($data as $palitas) {
                 $carro='<a href="index.php?controller=ProductController&action=aniadirCarrito&id_pala='.$palitas['id_pala'].'">Añadir al carrito</a>';
                 echo "<tr>
